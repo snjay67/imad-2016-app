@@ -12,17 +12,17 @@ var articles :{
                content :`
                     Content for article
 `},
-    art_two : {title : "Article One",
-               heading : "This is Test Article one";
+    art_two : {title : "Article Two",
+               heading : "This is Test Article Two";
                date : "Sep 20th 2016";
                content :`
-                    Content for article
+                    Content for article Two
 `},
-    art_three : {title : "Article One",
-               heading : "This is Test Article one";
+    art_three : {title : "Article Three",
+               heading : "This is Test Article Three";
                date : "Sep 20th 2016";
                content :`
-                    Content for article
+                    Content for article Three
 `};
 };
 function get_template(data)
