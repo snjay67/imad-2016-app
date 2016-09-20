@@ -68,7 +68,7 @@ app.get('/', function (req, res) {
 app.get('/:article_name', function (req, res) {
     var articlename = req.params.article_name;
 //    res.send("test");
-  res.send(articlename + "  " + get_template(articles[articlename]));
+  res.send(get_template(articles[articlename]));
 });
 app.get('/article_two', function (req, res) {
   res.send("Article Two");
