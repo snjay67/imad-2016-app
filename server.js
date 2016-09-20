@@ -4,7 +4,26 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var articles :{
+    art_one : {title : "Article One",
+               heading : "This is Test Article one",
+               date : "Sep 20th 2016",
+               content :`
+                    Content for article
+`},
+    art_two : {title : "Article Two",
+               heading : "This is Test Article Two",
+               date : "Sep 20th 2016",
+               content :`
+                    Content for article Two
+`},
+    art_three : {title : "Article Three",
+               heading : "This is Test Article Three",
+               date : "Sep 20th 2016",
+               content :`
+                    Content for article Three
+`}
+};
 
 function get_template(data)
 {
