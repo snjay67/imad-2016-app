@@ -23,7 +23,7 @@ var articles :{
                date : "Sep 20th 2016";
                content :`
                     Content for article
-`}
+`};
 };
 function get_template(data)
 {
