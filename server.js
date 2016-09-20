@@ -10,20 +10,23 @@ var articles :{
                date : 'Sep 20th 2016',
                content :`
                     Content for article
-`},
+                        `
+              },
     art_two : {title : 'Article Two',
                heading : 'This is Test Article Two',
                date : 'Sep 20th 2016',
                content :`
                     Content for article Two
-`},
+                        `
+                },
     art_three : {title : 'Article Three',
                heading : 'This is Test Article Three',
                date : 'Sep 20th 2016',
-               content :`
+               content:`
                     Content for article Three
-`}
-};
+                        `
+                }
+}
 
 function get_template(data)
 {
