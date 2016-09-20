@@ -60,7 +60,7 @@ function get_template(data)
     </body>
 </html>`;
     return html_content;
-};
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
