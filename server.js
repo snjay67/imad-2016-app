@@ -24,14 +24,14 @@ function get_template(data)
     <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
-        ($title)
+        $(title)
         <meta name="viewport" width="device-width, initial-scale=1"/> 
     </head>
     <body>
         <div class="container">
-            ($heading)
-            ($date)
-            ($content)
+            $(heading)
+            $(date)
+            $(content)
         </div>
     </body>
 </html>`;
