@@ -6,6 +6,12 @@
     <body>
         <div class="center" id="dvel">
             <img id = "madi" src="/ui/madi.png" class="img-medium"/>
+            <script>
+                var img = document.getElementById("madi");
+console.log("Assigned Img");
+console.log(img);
+img.onClick = function (){    console.log("Changing Margin");    img.style.marginLeft = "100px";};
+            </script>
         </div>
         <br>
         <div class="center text-big bold" id= "titl">
