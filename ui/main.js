@@ -13,7 +13,7 @@ function moveright()
 }
 img.onclick = function (){
     console.log("Changing Margin");
-    var interval = setInterval(moveright,100);
+    var interval = setInterval(moveright,10);
 };
     
 var img1 = document.getElementById("dvel");
