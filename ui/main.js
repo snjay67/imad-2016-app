@@ -11,7 +11,7 @@ function moveright()
     var mrginleft = 10;
         img.style.marginLeft = marginleft + "px";
 }
-img.onClick = function (){
+img.onclick = function (){
     console.log("Changing Margin");
     var interval = setInterval(moveright,100);
 };
@@ -21,4 +21,4 @@ console.log("Assigned Img");
 console.log(img1);
 element.onclick = function () {
     console.log("Changing Margin");
-    img.style.marginLeft = "100px";};
+    img1.style.marginLeft = "100px";};
