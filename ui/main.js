@@ -7,13 +7,13 @@ console.log(img);
 var marginleft = 0;
 function moveright()
 {
-    marginleft = marginleft + 10;
+    marginleft = marginleft + 1;
     var mrginleft = 10;
         img.style.marginLeft = marginleft + "px";
 }
 img.onclick = function (){
     console.log("Changing Margin");
-    var interval = setInterval(moveright,10);
+    var interval = setInterval(moveright,100);
 };
     
 var img1 = document.getElementById("dvel");
