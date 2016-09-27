@@ -4,10 +4,21 @@ element.innerHTML = "New value";
 var img = document.getElementById("madi");
 console.log("Assigned Img");
 console.log(img);
-img.onClick = function (){    console.log("Changing Margin");    img.style.marginLeft = "100px";};
+var marginleft = 0;
+function moveright()
+{
+    marginleft = marginleft + 10;
+    var mrginleft = 10;
+        img.style.marginLeft = marginleft + "px";
+}
+img.onClick = function (){
+    console.log("Changing Margin");
+    var interval = setInterval(moveright,100);
+};
+    
 var img1 = document.getElementById("dvel");
 console.log("Assigned Img");
 console.log(img1);
-element.onClick = function () {
+element.onclick = function () {
     console.log("Changing Margin");
     img.style.marginLeft = "100px";};
