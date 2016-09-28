@@ -27,6 +27,7 @@ var button = document.getElementById("btn");
 button.onclick = function(){
     var counter = 0;
     var req = new XMLHttpRequest();
+                alert("Hello - 1");
     req.onreadystatechange = function(){
                     alert("Hello");
         if (req.readystate == XMLHttpRequest.DONE )
