@@ -22,3 +22,7 @@ console.log(img1);
 element.onclick = function () {
     console.log("Changing Margin");
     img1.style.marginLeft = "100px";};
+var button = document.getElementById("button");
+button.onclick = function(){
+    
+}
