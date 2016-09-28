@@ -38,6 +38,6 @@ button.onclick = function(){
             }
         }
     };
-    request.open("GET","http://snjay67.imad.hasura-app.io/counter",true);
-    request.send();
+    req.open("GET","http://snjay67.imad.hasura-app.io/counter",true);
+    req.send();
     };
