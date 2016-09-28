@@ -27,12 +27,11 @@ var button = document.getElementById("btn");
 button.onclick = function(){
     var counter = 0;
     var req = new XMLHttpRequest();
-                alert("Hello - 1");
     req.onreadystatechange = function(){
-                    alert("Hello");
+        alert("Hello - 1");
         if (req.readystate == XMLHttpRequest.DONE )
         {
-            alert("Hello");
+            alert("Hello - 2");
             if (req.status == 200)
             {
                 var counter = req.responseText;
