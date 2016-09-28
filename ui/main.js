@@ -22,7 +22,7 @@ console.log(img1);
 element.onclick = function () {
     console.log("Changing Margin");
     img1.style.marginLeft = "100px";};
-var button = document.getElementById("counter");
+var button = document.getElementById("btn");
 button.onclick = function(){
     var counter = 0;
     var count = document.getElementById("count");
