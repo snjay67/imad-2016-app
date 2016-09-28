@@ -28,13 +28,10 @@ button.onclick = function(){
     var counter = 0;
     var req = new XMLHttpRequest();
     req.onreadystatechange = function(){
-        alert("Hello - 1");
         if (req.readyState == XMLHttpRequest.DONE )
         {
-            alert("Hello - 2");
             if (req.status == 200)
             {
-                alert("Hello - 3");
                 var counter = req.responseText;
                 var count = document.getElementById("count");
                 count.innerHTML = counter.toString();
