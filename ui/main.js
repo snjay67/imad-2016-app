@@ -28,6 +28,7 @@ button.onclick = function(){
     var counter = 0;
     var req = new XMLHttpRequest();
     req.onreadystatechange = function(){
+                    alert("Hello");
         if (req.readystate == XMLHttpRequest.DONE )
         {
             alert("Hello");
