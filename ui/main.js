@@ -24,5 +24,7 @@ element.onclick = function () {
     img1.style.marginLeft = "100px";};
 var button = document.getElementById("button");
 button.onclick = function(){
-    
+    var counter = 0;
+    var count = document.getElementById("count");
+    count.innerHTML = counter.toString();
 }
