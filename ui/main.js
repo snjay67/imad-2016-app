@@ -34,6 +34,7 @@ button.onclick = function(){
             alert("Hello - 2");
             if (req.status == 200)
             {
+                alert("Hello - 3");
                 var counter = req.responseText;
                 var count = document.getElementById("count");
                 count.innerHTML = counter.toString();
