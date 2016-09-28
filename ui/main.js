@@ -27,6 +27,8 @@ var button = document.getElementById("btn");
 button.onclick = function(){
     var counter = 0;
     var req = new XMLHttpRequest();
+    req.open('GET','http://snjay67.imad.hasura-app.io/counter',true);
+    req.send(null);
     req.onreadystatechange = function(){
         if (req.readyState == XMLHttpRequest.DONE )
         {
@@ -38,6 +40,4 @@ button.onclick = function(){
             }
         }
     };
-    req.open('GET','http://snjay67.imad.hasura-app.io/counter',true);
-    req.send();
     };
