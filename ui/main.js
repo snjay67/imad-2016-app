@@ -30,6 +30,7 @@ button.onclick = function(){
     req.onreadystatechange = function(){
         if (req.readystate == XMLHttpRequest.DONE )
         {
+            alert("Hello");
             if (req.status == 200)
             {
                 var counter = req.responseText;
