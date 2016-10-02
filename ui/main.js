@@ -41,3 +41,16 @@ button.onclick = function(){
         }
     };
     };
+    var nameInput = document.getElementById("name");
+    var nameIn = nameInput.value;
+    var submit = document.getElementById("submit");
+    submit.onclick = function(){
+        var names = ['Name1','Name2','Name3'];
+        var nameli = '';
+        for (var index = 0; index <3; index++)
+        {
+            nameli = "<li>" + names[index] + "</li>";
+        }
+        var ul = document.getElementById("namelist");
+        ul.innerHTML = nameli;
+    };
