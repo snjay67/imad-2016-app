@@ -45,9 +45,9 @@ button.onclick = function(){
     var nameIn = nameInput.value;
     var submit = document.getElementById("Submit");
     submit.onclick = function(){
-        var names = ['name1','name2','name3'];
+        var names = ['name1','name2','name3','name4'];
         var nameli = '';
-        for (var index = 0; index <3; index++)
+        for (var index = 0; index <4; index++)
         {
             nameli +=  "<li>" + names[index] + "</li>";
         }
