@@ -49,7 +49,7 @@ button.onclick = function(){
         var nameli = '';
         for (var index = 0; index <3; index++)
         {
-            nameli = "<li>" + names[index] + "</li>";
+            nameli +=  "<li>" + names[index] + "</li>";
         }
         var ul = document.getElementById("namelist");
         ul.innerHTML = nameli;
