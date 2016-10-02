@@ -47,6 +47,7 @@ var submit = document.getElementById("Submit");
 submit.onclick = function(){
     var counter = 0;
     var req = new XMLHttpRequest();
+    alert(nameIn);
     req.open('GET','http://snjay67.imad.hasura-app.io/submit-name?name='+nameIn,true);
     req.send(null);
     req.onreadystatechange = function(){
