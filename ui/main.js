@@ -47,7 +47,6 @@ submit.onclick = function(){
     var nameIn = nameInput.value;
     var counter = 0;
     var req = new XMLHttpRequest();
-    alert(nameIn);
     req.open('GET','http://snjay67.imad.hasura-app.io/submit-name?name='+nameIn,true);
     req.send(null);
     req.onreadystatechange = function(){
@@ -58,7 +57,6 @@ submit.onclick = function(){
                 var names = req.responseText;
                 names = JSON.parse(names);
                 var nameli = '';
-                alert(names);
                 for (var index = 0; index <names.length; index++)
                 {
                     nameli +=  "<li>" + names[index] + "</li>";
