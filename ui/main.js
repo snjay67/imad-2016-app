@@ -43,7 +43,7 @@ button.onclick = function(){
     };
     var nameInput = document.getElementById("name");
     var nameIn = nameInput.value;
-    var submit = document.getElementById("submit");
+    var submit = document.getElementById("Submit");
     submit.onclick = function(){
         var names = ['name1','name2','name3'];
         var nameli = '';
