@@ -56,6 +56,7 @@ submit.onclick = function(){
             {
                 var names = req.responseText;
                 var nameli = '';
+                alert(names);
                 for (var index = 0; index <names.length; index++)
                 {
                     nameli +=  "<li>" + names[index] + "</li>";
