@@ -40,17 +40,29 @@ button.onclick = function(){
             }
         }
     };
-    };
-    var nameInput = document.getElementById("name");
-    var nameIn = nameInput.value;
-    var submit = document.getElementById("Submit");
-    submit.onclick = function(){
-        var names = ['name1','name2','name3','name4'];
-        var nameli = '';
-        for (var index = 0; index <4; index++)
+};
+var nameInput = document.getElementById("name");
+var nameIn = nameInput.value;
+var submit = document.getElementById("Submit");
+submit.onclick = function(){
+    var counter = 0;
+    var req = new XMLHttpRequest();
+    req.open('GET','http://snjay67.imad.hasura-app.io/submit-name?name='+nameIn,true);
+    req.send(null);
+    req.onreadystatechange = function(){
+        if (req.readyState == XMLHttpRequest.DONE )
         {
-            nameli +=  "<li>" + names[index] + "</li>";
+            if (req.status == 200)
+            {
+                var names = req.responseText;
+                var nameli = '';
+                for (var index = 0; index <names.length; index++)
+                {
+                    nameli +=  "<li>" + names[index] + "</li>";
+                }
+                var ul = document.getElementById("namelist");
+                ul.innerHTML = nameli;
+            }
         }
-        var ul = document.getElementById("namelist");
-        ul.innerHTML = nameli;
     };
+};
