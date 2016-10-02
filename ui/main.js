@@ -56,6 +56,7 @@ submit.onclick = function(){
             if (req.status == 200)
             {
                 var names = req.responseText;
+                names = JSON.parse(names);
                 var nameli = '';
                 alert(names);
                 for (var index = 0; index <names.length; index++)
