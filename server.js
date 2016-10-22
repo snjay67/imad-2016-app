@@ -81,7 +81,7 @@ app.get('/submit-name',function(req,res){
 app.get('/:article_name', function (req, res) {
         const pg = require('pg');
 const connectionString = 'postgres://localhost:5432/snjay67';
-    var client = new Client({
+    var client = new pg.Client({
       user: 'snjay67',
       password: 'db-snjay67-15715',
       database: 'snjay67',
