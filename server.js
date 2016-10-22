@@ -89,7 +89,7 @@ app.get('/article_two', function (req, res) {
 });
 app.get('/article_three', function (req, res) {
     const pg = require('pg');
-const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/todo';
+const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/snjay67';
 
 const client = new pg.Client(connectionString);
 client.connect();
