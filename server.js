@@ -79,6 +79,11 @@ app.get('/submit-name',function(req,res){
 });
 
 app.get('/:article_name', function (req, res) {
+        const pg = require('pg');
+const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/snjay67';
+
+const client = new pg.Client(connectionString);
+client.connect();
     res.send("Test");
     var articlename = req.params.article_name;
 //    res.send("test");
@@ -88,13 +93,9 @@ app.get('/article_two', function (req, res) {
   res.send("Article Two");
 });
 app.get('/article_three', function (req, res) {
-    const pg = require('pg');
-const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/snjay67';
 
-const client = new pg.Client(connectionString);
-client.connect();
 
-  res.send(client);
+  res.send("Article Three");
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
