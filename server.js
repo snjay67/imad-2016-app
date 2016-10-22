@@ -94,7 +94,7 @@ const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/
 const client = new pg.Client(connectionString);
 client.connect();
 
-  res.send("Article Three");
+  res.send(client);
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
