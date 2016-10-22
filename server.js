@@ -84,9 +84,9 @@ const connectionString = 'postgres://localhost:5432/snjay67';
 
 const client = new pg.Client(connectionString);
 client.connect();
-const query = client.query(
-  'CREATE TABLE items(id SERIAL PRIMARY KEY, text VARCHAR(40) not null, complete BOOLEAN)');
-query.on('end', () => { client.end(); });
+const query = client.query('SELECT * FROM items ORDER BY id ASC');
+query.on('row', (row) => {results.push(row); });
+
     res.send("Test");
     var articlename = req.params.article_name;
 //    res.send("test");
