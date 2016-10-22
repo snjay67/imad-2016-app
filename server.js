@@ -81,15 +81,15 @@ app.get('/submit-name',function(req,res){
 app.get('/:article_name', function (req, res) {
         const pg = require('pg');
 const connectionString = 'postgres://localhost:5432/snjay67';
-
+var tstvar = 'Test';
 const client = new pg.Client(connectionString);
-client.on('error', function(error) {      alert(error);    });  
+client.on('error', function(error) {      tstvar = error    });  
 client.connect();
 const query = client.query('SELECT * FROM user');
 query.on('row', (row) => {results.push(row); });
 query.on('end', () => {done(); return res.json(results);});
 
-    res.send("Test");
+    res.send(tstvar);
     var articlename = req.params.article_name;
 //    res.send("test");
   res.send(get_template(articles[articlename]));
