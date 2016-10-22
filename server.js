@@ -80,7 +80,7 @@ app.get('/submit-name',function(req,res){
 
 app.get('/:article_name', function (req, res) {
         const pg = require('pg');
-//const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/snjay67';
+const connectionString = 'postgres://localhost:5432/snjay67';
 
 //const client = new pg.Client(connectionString);
 //client.connect();
