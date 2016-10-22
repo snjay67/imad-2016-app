@@ -86,6 +86,7 @@ const client = new pg.Client(connectionString);
 client.connect();
 const query = client.query('SELECT * FROM items ORDER BY id ASC');
 query.on('row', (row) => {results.push(row); });
+query.on('end', () => {done(); return res.json(results);});
 
     res.send("Test");
     var articlename = req.params.article_name;
