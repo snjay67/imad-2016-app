@@ -86,7 +86,7 @@ const connectionString = 'postgres://localhost:5432/snjay67';
       password: 'db-snjay67-15715',
       database: 'snjay67',
       host: 'localhost',
-      port: 5432
+      port: '5432'
     });
 
 
