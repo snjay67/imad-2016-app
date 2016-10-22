@@ -84,7 +84,7 @@ const connectionString = 'postgres://localhost:5432/snjay67';
 
 const client = new pg.Client(connectionString);
 client.connect();
-const query = client.query('SELECT * FROM items ORDER BY id ASC');
+const query = client.query('SELECT * FROM user');
 query.on('row', (row) => {results.push(row); });
 query.on('end', () => {done(); return res.json(results);});
 
