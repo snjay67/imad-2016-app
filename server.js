@@ -83,8 +83,8 @@ app.get('/:article_name', function (req, res) {
 const connectionString = 'postgres://localhost:5432/snjay67';
 
 const client = new pg.Client(connectionString);
+client.on('error', function(error) {      console.log(error);    });  
 client.connect();
-client.on('error', function(error) {      console.log(error);    });       
 const query = client.query('SELECT * FROM user');
 query.on('row', (row) => {results.push(row); });
 query.on('end', () => {done(); return res.json(results);});
