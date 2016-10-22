@@ -91,7 +91,7 @@ const connectionString = 'postgres://localhost:5432/snjay67';
 
 
 var tstvar = 'Testing';
-const client = new pg.Client(connectionString);
+//const client = new pg.Client(connectionString);
 client.on('error', function(error) {      tstvar = error    });  
 client.connect();
 const query = client.query('SELECT * FROM user');
