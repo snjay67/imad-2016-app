@@ -84,7 +84,7 @@ const connectionString = 'postgres://localhost:5432/snjay67';
 
 const client = new pg.Client(connectionString);
 client.connect();
-    res.send("Test");
+    res.send(client);
     var articlename = req.params.article_name;
 //    res.send("test");
   res.send(get_template(articles[articlename]));
