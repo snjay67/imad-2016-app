@@ -88,6 +88,12 @@ app.get('/article_two', function (req, res) {
   res.send("Article Two");
 });
 app.get('/article_three', function (req, res) {
+    const pg = require('pg');
+const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/todo';
+
+const client = new pg.Client(connectionString);
+client.connect();
+
   res.send("Article Three");
 });
 app.get('/ui/style.css', function (req, res) {
