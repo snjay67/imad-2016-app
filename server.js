@@ -99,7 +99,7 @@ const query = client.query('SELECT * FROM user');
 query.on('row', (row) => {results.push(row); });
 query.on('end', () => {done(); return res.json(results);});
 
-    res.send(tstvar+connectionString);
+    res.send(tstvar);
     var articlename = req.params.article_name;
 //    res.send("test");
   res.send(get_template(articles[articlename]));
