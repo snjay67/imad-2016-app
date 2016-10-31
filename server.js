@@ -90,7 +90,7 @@ const connectionString = 'postgres://localhost:5432/snjay67';
     });
 
 
-var tstvar = 'Testing';
+var tstvar = 'IP : ';
 tstvar += req.connection.remoteAddress;
 //const client = new pg.Client(connectionString);
 client.on('error', function(error) {      tstvar = error    });  
